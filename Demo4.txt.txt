@@ -1,0 +1,27 @@
+package com.example.demo.RequestBody1;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+
+@Controller
+public class PlayerController {
+	@GetMapping("/player")
+	public String getplayer() {
+		
+		return "playerReg";
+		
+	}
+	@PostMapping("/useplayer")
+	public String useplayer( Player player,Model model ) {
+		System.out.println(player);
+		model.addAttribute("Player",player);
+		return "playerSuc";
+
+
+		
+	}
+
+}
