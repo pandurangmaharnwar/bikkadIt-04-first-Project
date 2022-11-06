@@ -1,0 +1,40 @@
+package com.example.demo.RequestBody;
+
+public class User {
+	private String Uname;
+	private String pwd;
+	private String email;
+	private double phno;
+	
+	public String getUname() {
+		return Uname;
+	}
+	public void setUname(String uname) {
+		Uname = uname;
+	}
+	public String getPwd() {
+		return pwd;
+	}
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public double getPhno() {
+		return phno;
+	}
+	public void setPhno(double phno) {
+		this.phno = phno;
+	}
+	@Override
+	public String toString() {
+		return "User [Uname=" + Uname + ", pwd=" + pwd + ", email=" + email + ", phno=" + phno + "]";
+	}
+	
+	
+
+}
